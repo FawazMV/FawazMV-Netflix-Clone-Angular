@@ -1,0 +1,6 @@
+/* Show the "Username" and "Netflix Clone" text on small screens when the hamburger menu is active */
+@media (max-width: 767px) {
+  .navbar--mobile-menu-active .hidden.md\:block {
+    display: block;
+  }
+}
