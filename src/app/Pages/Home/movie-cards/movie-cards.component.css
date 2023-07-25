@@ -18,7 +18,7 @@
   max-height: 100px;
   object-fit: contain;
   width: 100%;
-  box-sizing: content-box;
+  box-sizing: border-box;
   transition: transform 450ms;
   margin-right: 7px;
   border-radius: 5px;

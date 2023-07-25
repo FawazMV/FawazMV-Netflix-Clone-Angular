@@ -1,23 +1,22 @@
-<nav class="bg-black py-4 px-6">
-  <div class="container mx-auto flex justify-between items-center">
-    <div class="flex items-center">
-      <img src="path-to-netflix-logo.png" alt="Netflix Logo" class="h-8">
-      <h1 class="text-white text-2xl font-semibold ml-2 hidden md:block">Netflix Clone</h1>
-    </div>
-    <div class="flex items-center space-x-4">
-      <a href="#" class="text-white hover:text-gray-400">Home</a>
-      <a href="#" class="text-white hover:text-gray-400">My List</a>
-      <a href="#" class="text-white hover:text-gray-400">Browse</a>
-      <div class="flex items-center">
-        <img src="path-to-user-avatar.png" alt="User Avatar" class="h-8 w-8 rounded-full">
-        <span class="text-white ml-2 hidden md:block">Username</span>
-      </div>
-      <!-- Hamburger menu icon for small screens -->
-      <button class="md:hidden focus:outline-none">
-        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-        </svg>
-      </button>
+<nav class="navbar navbar-expand-lg fixed-top" [style.background-color]="navBackground?'#0e0e0ede':''">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="home">NETFLIX</a>
+    <button  class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div  class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active me-2" aria-current="page" routerLink="/">Home</a>
+        </li>
+        <li class="nav-item ms-2 me-4">
+          <a class="nav-link btn btn-danger search" routerLink="search">Search</a>
+        </li>
+        <div>
+          <button  class="logout btn btn-primary fw-bold me-4">Logout</button>
+        </div>
+
+      </ul>
     </div>
   </div>
 </nav>
